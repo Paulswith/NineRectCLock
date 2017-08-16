@@ -2,11 +2,13 @@
 //  AppDelegate.m
 //  NineRectCLock
 //
-//  Created by v_ljiayili(李嘉艺) on 2017/8/16.
+//  Created by Dobby on 2017/8/16.
 //  Copyright © 2017年 Dobby. All rights reserved.
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
+
 
 @interface AppDelegate ()
 
@@ -17,6 +19,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:[ViewController new]];
+    self.window.rootViewController = navi;
+    [self.window makeKeyAndVisible];
+    
+    
     return YES;
 }
 

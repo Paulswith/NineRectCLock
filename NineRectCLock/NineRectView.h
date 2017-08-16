@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  NineRectView.h
 //  NineRectCLock
 //
 //  Created by Dobby on 2017/8/16.
@@ -8,10 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
-
-
+@interface NineRectView : UIView
++ (instancetype)nineRectViewWithFrame:(CGRect)frame;
 @end
-
